@@ -19,5 +19,15 @@ new fullpage('#fullpage', {
                 .fromTo(chairs[2], 1, {opacity: 0}, {opacity: 1})
 
         }
+
+        if(destination.index === 2) {
+            const cards = document.querySelectorAll('.card')
+            
+            tl
+                .fromTo(cards[0], 0.5, {y: '100', opacity: 0}, {y: 50, opacity: 1})
+                .fromTo(cards[1], 0.7, {y: '100', opacity: 0}, {y: 50, opacity: 1})
+                .fromTo(cards[2], 0.9, {y: '100', opacity: 0}, {y: 50, opacity: 1})
+
+        }
     }
 })
