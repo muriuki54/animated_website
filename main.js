@@ -12,11 +12,12 @@ new fullpage('#fullpage', {
             const chairs = document.querySelectorAll('.chair')
             const description = document.querySelector('.description')
 
-            tl.fromTo(chairs, 0.7, {x: '100%'}, {x: '-35%'})
+            tl
+                //.fromTo(chairs, 0.7, {x: '100%'}, {x: '-35%'})
                 .fromTo(description, 0.75, {y: '50', opacity: 0}, {y: 0, opacity: 1})
-                .fromTo(chairs[0], 1, {opacity: 1}, {opacity: 1})
-                .fromTo(chairs[1], 1, {opacity: 0}, {opacity: 1})
-                .fromTo(chairs[2], 1, {opacity: 0}, {opacity: 1})
+                .fromTo(chairs[0], 1, {x: '100%', opacity: 1}, {x: '-55%', opacity: 1})
+                .fromTo(chairs[1], 1, {x: '100%', opacity: 0}, {x: '-45%', opacity: 1})
+                .fromTo(chairs[2], 1, {x: '100%', opacity: 0}, {x: '-35%', opacity: 1})
 
         }
 
